@@ -99,6 +99,29 @@
       }
     },
     {
+      "name": "BTT SKR E3-DIP V1.1 4-axis (Bootloader)",
+      "symbol": "BOARD_BTT_SKR_E3_DIP_V11",
+      "URL": "https://github.com/bigtreetech/BIGTREETECH-SKR-E3-DIP-V1.0",
+      "caps": {
+        "axes": 4,
+        "digital_in": 0,
+        "digital_out": 0,
+        "eeprom": 3,
+        "fram": 0,
+        "i2c": 0,
+        "sdcard": 1,
+        "keypad": 0,
+        "trinamic": 0,
+        "trinamic_uart_addr": 1,
+        "pio_board": "genericSTM32F103RC",
+        "ldscript": "STM32F103RCTX_BL28K_FLASH.ld"
+      },
+      "symbols": {
+          "STM32F103xE": "",
+          "HAS_BOOTLOADER": ""
+      }
+    },
+    {
       "name": "Mach3 USB breakout (BSMCE04U)",
       "symbol": "BOARD_MACH3_BOB",
       "URL": "https://embeddedtronicsblog.wordpress.com/2021/02/05/4-axis-mach3-controller/",
