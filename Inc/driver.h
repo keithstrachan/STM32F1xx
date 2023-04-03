@@ -101,6 +101,8 @@
   #include "mach3_bob_map.h"
 #elif defined(BOARD_MY_MACHINE)
   #include "my_machine_map.h"
+#elif defined(BOARD_BTT_SKR_E3_DIP_V11)
+  #include "btt_skr_e3-DIP_1.1_map.h"
 #else // default board
   #include "generic_map.h"
 #endif

@@ -1,9 +1,9 @@
-Core
-App
-Target
-motors
 grbl
-Class
-eeprom
-odometer
 keypad
+Class
+Target
+eeprom
+App
+Core
+motors
+odometer

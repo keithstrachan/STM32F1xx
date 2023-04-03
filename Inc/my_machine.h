@@ -50,3 +50,5 @@
 //#define EEPROM_IS_FRAM     1 // Uncomment when EEPROM is enabled and chip is FRAM, this to remove write delay.
 
 /**/
+#define SDCARD_ENABLE
+#define COREXY
