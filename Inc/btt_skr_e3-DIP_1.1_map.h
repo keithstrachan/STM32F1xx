@@ -41,8 +41,8 @@
 #ifdef TRINAMIC_MIXED_DRIVERS
 #undef TRINAMIC_MIXED_DRIVERS
 #endif
-#define TRINAMIC_ENABLE 2209
-#define TRINAMIC_MIXED_DRIVERS 0
+// #define TRINAMIC_ENABLE 2209
+// #define TRINAMIC_MIXED_DRIVERS 0
 
 #if EEPROM_ENABLE < 2
 #undef EEPROM_ENABLE
@@ -50,7 +50,7 @@
 #endif
 
 // Define step pulse output pins.
-// #define STEP_PORT               GPIOB
+#define STEP_PORT               GPIOB
 #define X_STEP_PORT               GPIOC
 #define X_STEP_PIN              6 //PC6
 #define Y_STEP_PORT               GPIOB
@@ -70,7 +70,7 @@
 
 // Define stepper driver enable/disable output pin.
 #define X_ENABLE_PORT           GPIOC
-#define X_ENABLE_PIN            7 //PB7
+#define X_ENABLE_PIN            7 //PC7
 #define Y_ENABLE_PORT           GPIOB
 #define Y_ENABLE_PIN            14 //PB14
 #define Z_ENABLE_PORT           GPIOB
@@ -96,9 +96,9 @@
 
   // Define spindle enable and spindle direction output pins.
 #define SPINDLE_ENABLE_PORT     GPIOC
-#define SPINDLE_ENABLE_PIN      7 //PC7
-#define SPINDLE_DIRECTION_PORT  GPIOC
-#define SPINDLE_DIRECTION_PIN   6 //PC6
+#define SPINDLE_ENABLE_PIN      2 //PC2
+#define SPINDLE_DIRECTION_PORT  GPIOA
+#define SPINDLE_DIRECTION_PIN   0 //PA0
 
 // Define spindle PWM output pin.
 #define SPINDLE_PWM_PORT_BASE   GPIOA_BASE
@@ -111,10 +111,13 @@
 #define COOLANT_MIST_PIN        9 //PC9
 
 // Define user-control controls (cycle start, reset, feed hold) input pins.
-#define CONTROL_PORT            GPIOC
-#define RESET_PIN               15 //PC15
-#define FEED_HOLD_PIN           13 //PC13
-#define CYCLE_START_PIN         12 //PC12
+#define CONTROL_PORT            GPIOB
+#define RESET_PORT               GPIOB
+#define RESET_PIN               6 //PB6
+#define FEED_HOLD_PORT           GPIOB
+#define FEED_HOLD_PIN           9 //PB9
+#define CYCLE_START_PORT         GPIOB
+#define CYCLE_START_PIN         7 //PB7
 #if SAFETY_DOOR_ENABLE
 #define SAFETY_DOOR_PIN         3 //PC3
 #endif
