@@ -40,7 +40,7 @@
 //#define MPG_ENABLE         1 // Enable MPG interface. Requires serial port and one handshake pin unless
                                // KEYPAD_ENABLE is set to 2 when mode switching is done by the CMD_MPG_MODE_TOGGLE (0x8B)
                                // command character. Set both MPG_ENABLE and KEYPAD_ENABLE to 2 to use a handshake pin anyway.
-#define KEYPAD_ENABLE      1 // Set to 1 for I2C keypad, 2 for other input such as serial data
+//#define KEYPAD_ENABLE      1 // Set to 1 for I2C keypad, 2 for other input such as serial data
 #define ODOMETER_ENABLE    1 // Odometer plugin.
 //#define TRINAMIC_ENABLE 2130 // Trinamic TMC2130 stepper driver support. NOTE: work in progress.
 //#define TRINAMIC_ENABLE 5160 // Trinamic TMC5160 stepper driver support. NOTE: work in progress.
